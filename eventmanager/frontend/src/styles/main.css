@@ -1,0 +1,68 @@
+/* * {
+    padding: 0;
+    margin: 0;
+} */
+
+body {
+    background-image: url('../../images/background-image.jpeg');
+    background-size: 100%;
+}
+
+header {
+    text-align: center;
+}
+
+section {
+    margin-top: 10px;
+}
+article {
+    float: left;
+    margin: 5px;
+    max-width: 300px;
+    height: 24em;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* article:hover {
+    border: 2px solid gray;
+} */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+img {
+    max-width: 300px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+/* Star decoration */
+.stars-outer {
+    display: inline-block;
+    position: relative;
+    font-family: FontAwesome;
+  }
+   
+.stars-outer::before {
+    content: "\f006 \f006 \f006 \f006 \f006";
+  }
+   
+.stars-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+  }
+   
+.stars-inner::before {
+    content: "\f005 \f005 \f005 \f005 \f005";
+    color: #f8ce0b;
+  }
+.review-count {
+    margin: 5px;
+}
